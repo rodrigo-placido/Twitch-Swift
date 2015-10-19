@@ -32,6 +32,6 @@ class GameDetailViewController: UIViewController {
         self.lblChanel.text = String(format: "Channels = %d", (game?.channels)!)
         self.lblViewers.text = String(format: "Viewers = %d", (game?.viewers)!)
         let imageURL = NSURL(string: (game?.game?.box?.medium)!)
-        self.imgGame.hnk_setImageFromURL(imageURL)
+        self.imgGame.hnk_setImageFromURL(imageURL, placeholder: UIImage(named: "placeholder"))
     }
 }

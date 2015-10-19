@@ -15,6 +15,6 @@ class Top50TableViewCell: UITableViewCell {
     
     func setImageURL(url:String) {
         let imageURL = NSURL(string: url)
-        self.imgGame.hnk_setImageFromURL(imageURL)
+        self.imgGame.hnk_setImageFromURL(imageURL, placeholder: UIImage(named: "placeholder"))
     }
 }
